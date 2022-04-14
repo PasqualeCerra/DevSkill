@@ -1,0 +1,4 @@
+let b:string =prompt();
+let a:string =prompt();
+console.log(a+b);
+console.log(b+a);
