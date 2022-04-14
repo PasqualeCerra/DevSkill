@@ -1,0 +1,4 @@
+let b:number =prompt();
+let a:number =prompt();
+console.log(a*b);
+console.log(b*2+a*2);
