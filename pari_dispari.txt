@@ -1,0 +1,11 @@
+let x:number=prompt("inserisci numero"); 
+/*
+if(x%2==0){
+    console.log("è pari");
+}else console.log("è dispari")
+*/
+
+switch(x%2==0){
+    case true console.log("è pari");break;
+    default console.log("è dispari");
+}
