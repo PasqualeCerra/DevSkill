@@ -1,0 +1,2 @@
+let a :number=prompt("inserisci anno");
+console.log("hai "+(2022-a)+" anni"); 
