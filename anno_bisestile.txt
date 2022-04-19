@@ -1,0 +1,7 @@
+let a :number= prompt("inserisci anno");
+/* if(a%4==0 && a%100!=0||a%400==0){
+    console.log("anno bisestile");
+}
+else{
+console.log("non bisestile");}
+*/
