@@ -1,0 +1,6 @@
+let x:number=prompt("inserisci numero");
+if(x>0){
+    console.log("il numero è positivo");
+}else if(x==0){console.log("il numero non è ne positivo ne negativo");
+
+}else console.log("il numero è negativo");
