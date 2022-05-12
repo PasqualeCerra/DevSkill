@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ordinamentovet</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ORDINAMENTO</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-grid color="light">
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col>
+          <h1 class="ion-text-center">ORDINA L'ARRAY</h1>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h2 class="ion-text-center">Prova</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Inserisci valore</ion-label>
+            <ion-input type="number" clearOnEdit="true" [(ngModel)]="numero"> </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><ion-button (click)="input()" >inserisci</ion-button></ion-col>
+          <ion-col>
+            <h3 class="ion-text-center">L'array ordinato è {{messaggio}} </h3>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-select interface="popover" placeholder="Scegli come ordinare array" [(ngModel)]="scelta">
+            <ion-select-option value="c">CRESCENTE</ion-select-option>
+            <ion-select-option value="d">DECRESCENTE</ion-select-option>
+          </ion-select>
+
+          <ion-col></ion-col>
+          <ion-button (click)="ordinamento()">Calcola:</ion-button>
+          <ion-col></ion-col>
+
+
+        </ion-row>
+    </ion-grid>
+</ion-content>
