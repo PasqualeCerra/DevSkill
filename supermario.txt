@@ -1,0 +1,15 @@
+let pareti:number=+prompt("Inserisci numero pareti");
+let altezze:number[]=[];
+let saltialti:number=0;
+let saltibassi:number=0;
+for(let i=0;i<pareti;i++){
+    altezze[i]=+prompt("Inserisci alterzza della parete "+i+1);
+    if(i>0){
+        if(altezze[i]>altezze[i-1]){
+            saltialti++;
+        }else if(altezze[i]<altezze[i-1]){
+            saltibassi++;
+        }    
+    }
+}
+console.log(saltialti+" "+saltibassi);
